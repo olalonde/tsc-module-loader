@@ -13,7 +13,7 @@ Alternatively, you can [register the loader programmatically in your code](https
 
 ## Why?
 
-It solves a common issue and complaint among TypeScript developers. Importing a `.js` file feels weird when all your source files actually have the `.ts` extension:
+It solves a [common issue](https://stackoverflow.com/questions/62619058/appending-js-extension-on-relative-import-statements-during-typescript-compilat) and complaint among TypeScript developers. Importing a `.js` file feels weird when all your source files actually have the `.ts` extension:
 
 ```typescript
 import foo from "./bar.js";
