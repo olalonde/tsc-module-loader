@@ -1,6 +1,6 @@
 {
   "name": "tsc-module-loader",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Mimics the resolution algorithm of the typescript compiler.",
   "type": "module",
   "main": "./build/loader.js",
