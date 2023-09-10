@@ -1,6 +1,6 @@
 # tsc-module-loader
 
-Node.js [custom ESM loader](https://nodejs.org/api/esm.html#loaders) that uses the module resolution algorithm of the TypeScript compiler under the hood. It reads your `tsconfig.json` file, so it doesn't require any custom configuration. Things like like `compilerOptions.paths` will just work™. With this loader, if your import works at compile time, it will work at runtime.
+Node.js [custom ESM loader](https://nodejs.org/api/esm.html#loaders) that uses the module resolution algorithm of the TypeScript compiler. It reads your `tsconfig.json` file, so it doesn't require any custom configuration. Things like like `compilerOptions.paths` will just work™. With this loader, if your import works at compile time, it will work at runtime.
 
 ## Usage
 
@@ -37,4 +37,5 @@ Did you mean to import /path/to/bar.js?
 A current solution is to use [tsc-alias](https://github.com/justkey007/tsc-alias) as a post-compile step but it can be buggy and requires custom configuration. Another alternative is to use `node --experimental-specifier-resolution=node` but it will break if your tsconfig.json uses custom module resolution configuration like `compilerOptions.paths`.
 
 The goal of this loader is that if an import works in TypeScript, it should also work at runtime. It does this by using TypeScript library functions to read your tsconfig.json and doing the module resolution.
-Warning: custom ESM loaders are currently an experimental feature.
+
+_Warning:_ custom ESM loaders are currently an experimental feature.
