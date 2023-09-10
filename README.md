@@ -1,6 +1,6 @@
 # tsc-module-loader
 
-Node.js [custom ESM loader](https://nodejs.org/api/esm.html#loaders) that mimics the resolution algorithm of the typescript compiler. It reads your `tsconfig.json` file, so it doesn't require any custom configuration. With this loader, if your import works at compile time, it will work at runtime.
+Node.js [custom ESM loader](https://nodejs.org/api/esm.html#loaders) that mimics the resolution algorithm of the typescript compiler. It reads your `tsconfig.json` file, so it doesn't require any custom configuration. Things like like `compilerOptions.paths` will just work™. With this loader, if your import works at compile time, it will work at runtime.
 
 ## Usage
 
