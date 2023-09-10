@@ -11,8 +11,8 @@ Warning: custom ESM loaders are currently an experimental feature.
 ## Usage
 
 ```console
-npm install --save tsc-loader
-node --experimental-loader tsc-loader build/some-file.js
+npm install --save tsc-module-loader
+node --experimental-loader tsc-module-loader build/some-file.js
 ```
 
 Alternatively, you can [register the loader programmatically in your code](https://nodejs.org/api/module.html#moduleregister).
