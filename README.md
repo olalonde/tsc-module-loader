@@ -4,7 +4,7 @@ Node.js [custom ESM loader](https://nodejs.org/api/esm.html#loaders) that mimics
 
 It solves a common issue and complaint among TypeScript developers.
 
-A current solution is to use [tsc-alias] as a post-compile step but it can have some bugs and requires custom configuration.
+A current solution is to use [tsc-alias](https://github.com/justkey007/tsc-alias) as a post-compile step but it can be buggy and requires custom configuration.
 
 Warning: custom ESM loaders are currently an experimental feature.
 
